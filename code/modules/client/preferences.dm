@@ -37,6 +37,12 @@ datum/preferences
 			SScharacter_setup.prefs_awaiting_setup += src
 	..()
 
+/datum/client_preference/show_discord_ooc
+	description ="Discord OOC chat"
+	key = "CHAT_DISCORD_OOC"
+	options = list(GLOB.PREF_SHOW, GLOB.PREF_HIDE)
+
+
 /datum/preferences/proc/setup()
 	if(!length(GLOB.skills))
 		decls_repository.get_decl(/decl/hierarchy/skill)

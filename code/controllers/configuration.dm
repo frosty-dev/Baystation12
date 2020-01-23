@@ -157,6 +157,13 @@ var/list/gamemode_cache = list()
 	var/gateway_delay = 18000 //How long the gateway takes before it activates. Default is half an hour.
 	var/ghost_interaction = 0
 
+	//******Webhooks*******//
+
+	var/webhook_address
+	var/webhook_key
+
+	//*********************//
+
 	var/comms_password = ""
 	var/ban_comms_password = null
 	var/list/forbidden_versions = list() // Clients with these byond versions will be autobanned. Format: string "byond_version.byond_build"; separate with ; in config, e.g. 512.1234;512.1235
@@ -550,6 +557,16 @@ var/list/gamemode_cache = list()
 
 				if("popup_admin_pm")
 					config.popup_admin_pm = 1
+
+				//***********Webhooks**********//
+
+				if("webhook_address")
+					config.webhook_address = value
+
+				if("webhook_key")
+					config.webhook_key = value
+
+				//******************************//
 
 				if("allow_holidays")
 					Holiday = 1

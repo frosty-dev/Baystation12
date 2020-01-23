@@ -901,8 +901,8 @@
 			return global.whitelist;
 		if("wireColours")
 			return global.wireColours;
-		if("world_topic_spam_protect_ip")
-			return global.world_topic_spam_protect_ip;
+//		if("world_topic_spam_protect_ip")
+//			return global.world_topic_spam_protect_ip;
 		if("world_topic_spam_protect_time")
 			return global.world_topic_spam_protect_time;
 		if("world_uplinks")
@@ -915,7 +915,7 @@
 			return global.z_levels;
 		if("zone_blocked")
 			return global.zone_blocked;
-		
+
 /proc/writeglobal(which, newval)
 	switch(which)
 		if("ANTAG_FREQS")
@@ -1818,8 +1818,8 @@
 			global.whitelist=newval;
 		if("wireColours")
 			global.wireColours=newval;
-		if("world_topic_spam_protect_ip")
-			global.world_topic_spam_protect_ip=newval;
+//		if("world_topic_spam_protect_ip")
+//			global.world_topic_spam_protect_ip=newval;
 		if("world_topic_spam_protect_time")
 			global.world_topic_spam_protect_time=newval;
 		if("world_uplinks")
@@ -1832,7 +1832,7 @@
 			global.z_levels=newval;
 		if("zone_blocked")
 			global.zone_blocked=newval;
-		
+
 /var/list/_all_globals=list(
 	"ANTAG_FREQS",
 	"BSACooldown",
@@ -2284,7 +2284,7 @@
 	"weighted_randomevent_locations",
 	"whitelist",
 	"wireColours",
-	"world_topic_spam_protect_ip",
+//	"world_topic_spam_protect_ip",
 	"world_topic_spam_protect_time",
 	"world_uplinks",
 	"worths",
